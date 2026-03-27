@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/bg_music_item"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+<!--    android:foreground="?attr/selectableItemBackground"，，歌曲项闪烁-->
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/pause"
+        app:tint="@color/white"
+        android:layout_marginRight="12dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_music_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未知歌曲"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tv_music_singer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="未知歌手"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_music_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="00:00"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <SeekBar
+            android:id="@+id/sb_music_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressTint="@color/blue_soft"
+            android:thumbTint="@color/blue_soft"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>

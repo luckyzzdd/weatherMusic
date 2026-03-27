@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下状态：颜色加深 + 阴影缩小（模拟按下的凹陷感） -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!-- 圆角（50dp高度配25dp圆角，完美半圆角） -->
+            <corners android:radius="25dp" />
+            <!-- 按下时的渐变背景（更深的蓝，更内敛） -->
+            <gradient
+                android:angle="0"
+            android:endColor="#2A6BC5"
+            android:startColor="#3A7BD5" />
+            <!-- 细白描边（按下时略窄，增强层次感） -->
+            <stroke
+                android:width="0.8dp"
+                android:color="#F5F5F5" />
+            <!-- 按下时阴影缩小（模拟凹陷） -->
+            <padding android:bottom="1dp" android:top="1dp" />
+        </shape>
+    </item>
+
+    <!-- 默认状态：主渐变 + 细描边 + 轻微内阴影 -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- 圆角和高度匹配，视觉更协调 -->
+            <corners android:radius="25dp" />
+            <!-- 主渐变背景（清新的蓝调渐变，比纯色更有质感） -->
+            <gradient
+                android:angle="0"
+                android:endColor="#4A90E2"
+                android:startColor="#5AA0F2" />
+            <!-- 极细白描边（提升精致度，不突兀） -->
+            <stroke
+                android:width="1dp"
+                android:color="#FFFFFF" />
+            <!-- 轻微内边距（让描边和文字之间有呼吸感） -->
+            <padding
+                android:left="2dp"
+                android:right="2dp"
+                android:top="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+</selector>

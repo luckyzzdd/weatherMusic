@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌曲Item圆角背景 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/pink_soft" />
+    <!-- 圆角半径，柔和不夸张 -->
+    <corners android:radius="8dp" />
+    <!-- 轻微阴影（可选，低端机也能适配） -->
+    <stroke
+        android:width="1dp"
+        android:color="@color/gray_light" />
+</shape>

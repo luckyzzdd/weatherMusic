@@ -1,0 +1,37 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 选中态：蓝色圆形 + 蓝色音符 -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/blue_soft"/>
+                    <size android:width="24dp" android:height="24dp"/>
+                </shape>
+            </item>
+            <!-- 限制音符尺寸为16dp（小于背景24dp，能居中显示） -->
+            <item
+                android:drawable="@drawable/music_1"
+                android:gravity="center"
+                android:width="16dp"
+                android:height="16dp"/>
+        </layer-list>
+    </item>
+
+    <!-- 未选中态：灰色空心圆 + 灰色音符 -->
+    <item android:state_checked="false">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <stroke android:width="1dp" android:color="#CCCCCC"/>
+                    <size android:width="24dp" android:height="24dp"/>
+                </shape>
+            </item>
+            <!-- 同样限制音符尺寸 -->
+            <item
+                android:drawable="@drawable/music_2"
+                android:gravity="center"
+                android:width="16dp"
+                android:height="16dp"/>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础色 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 灰色系（浅/中/深） -->
+    <color name="gray_light">#FFEEEEEE</color>
+    <color name="gray_mid">#FF999999</color>
+    <color name="gray_deep">#FF333333</color>
+
+    <!-- 红色系（浅/中/深） -->
+    <color name="red_light">#FFF8E1E1</color>
+    <color name="red_mid">#FFE53935</color>
+    <color name="red_deep">#FFB71C1C</color>
+
+    <!-- 黄色系（浅/中/深） -->
+    <color name="yellow_light">#FFFDF2B8</color>
+    <color name="yellow_mid">#FBC02D</color>
+    <color name="yellow_deep">#FFF57F17</color>
+
+    <!-- 蓝色系（浅/中/深） -->
+    <color name="blue_light">#FFE3F2FD</color>
+    <color name="blue_mid">#FF4285F4</color>
+    <color name="blue_deep">#FF1565C0</color>
+
+    <!-- 绿色系（浅/中/深） -->
+    <color name="green_light">#FFE8F5E9</color>
+    <color name="green_mid">#FF4CAF50</color>
+    <color name="green_deep">#FF2E7D32</color>
+
+    <!-- 紫色系（浅/中/深） -->
+    <color name="purple_light">#FFEDE7F6</color>
+    <color name="purple_mid">#FF9C27B0</color>
+    <color name="purple_deep">#FF6A1B9A</color>
+
+    <color name="hai_tang_hong">#db5a6b</color>
+
+    <!-- 粉色系（浅/中/深，适配你的配色风格） -->
+    <color name="pink_light">#FFFCE4EC</color>
+    <color name="pink_mid">#FFFF69B4</color>
+    <color name="pink_deep">#FFC2185B</color>
+    <color name="pink_soft">#FFF08B98</color>
+    <!-- 柔和黄色（比现有yellow_light更柔，暖调不刺眼） -->
+    <color name="yellow_soft">#FFFAE7</color>
+
+    <!-- 柔和蓝色（比现有blue_light更柔，冷调不突兀） -->
+    <color name="blue_soft">#6495ED</color>
+    <color name="purple_soft">#6750A4FF</color>
+    <!-- 柔和绿色（比现有green_light更柔，清新不艳丽） -->
+    <color name="green_soft">#FFB8E9C5</color>
+    <color name="qing">#008B8B</color>
+    <color name="cyan_softer">#33AAAA</color>
+    <color name="qing_light">#40B0B0</color>
+    <color name="cyan_ultra_soft">#44B3B3</color>
+    <!-- 浅灰色阴影（透明度10%，适配所有浅色背景） -->
+    <color name="shadow_light">#1A000000</color>
+
+    <color name="bg_playing_highlight">#1A0088FF</color>
+
+
+</resources>

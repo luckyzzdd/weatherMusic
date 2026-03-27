@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 选中状态：蓝色圆形背景 + 白色对勾 -->
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- 圆形背景 -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/blue_soft"/>
+                    <size android:width="40dp" android:height="40dp"/>
+                </shape>
+            </item>
+            <!-- 白色对勾（可替换成自己的对勾图标） -->
+            <item android:drawable="@drawable/music_1"
+                android:gravity="center"
+                android:width="20dp"
+                android:height="20dp"/>
+        </layer-list>
+    </item>
+    <!-- 未选中状态：灰色圆形边框 -->
+    <item android:state_checked="false">
+        <shape android:shape="oval">
+            <stroke android:color="@color/gray_light" android:width="2dp"/>
+            <solid android:color="@android:color/transparent"/>
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+</selector>
